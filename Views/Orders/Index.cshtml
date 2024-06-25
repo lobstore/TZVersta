@@ -1,0 +1,33 @@
+﻿@model IEnumerable<TZVersta.Models.Order>
+
+<h2>Orders</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order Number</th>
+            <th>Sender City</th>
+            <th>Recipient City</th>
+            <th>Weight</th>
+            <th>Pickup Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="details">
+
+                <td>@item.OrderNumber</td>
+                <td>@item.SenderCity</td>
+                <td>@item.RecipientCity</td>
+                <td>@item.Weight</td>
+                <td>@item.PickupDate</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">View</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
