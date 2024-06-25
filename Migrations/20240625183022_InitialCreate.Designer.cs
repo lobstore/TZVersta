@@ -12,7 +12,7 @@ using TZVersta.Data;
 namespace TZVersta.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240625095204_InitialCreate")]
+    [Migration("20240625183022_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -34,30 +34,25 @@ namespace TZVersta.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("OrderNumber")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("PickupDate")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("RecipientAddress")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("RecipientCity")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("SenderAddress")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("SenderCity")
-                        .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<decimal>("Weight")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Weight")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
