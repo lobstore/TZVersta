@@ -1,14 +1,14 @@
 # TZVersta
-## Шаги для запуска
-1. Если не установлен SDK, то установите с официального сайта https://dotnet.microsoft.com/ru-ru/download последюю версию
-2. Распакуйте архив с проектом
-3. Установите необходимые пакеты NuGet
-dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
-dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL.Design
-4. Установите pgadmin и postgresql сервер с официального сайта https://www.enterprisedb.com/downloads/postgres-postgresql-downloads 
-6. Пропишите указанные при установке postgresql данные в файле конфигурации appsettings.json, в строке подключения "DefaultConnection"
-7. Пропишите следующие команды в консоли для создания таблицы в БД и убедидесь в наличии соответствующей таблицы
-dotnet ef migrations add InitialCreate
-dotnet ef database update
-8. Запустите проект с помощью dotnet run находясь в папке с файлом проекта
-9. Перейти в браузере на url https://localhost:7261 или http://localhost:5094
+## РЁР°РіРё РґР»СЏ Р·Р°РїСѓСЃРєР°
+1. Р•СЃР»Рё РЅРµ СѓСЃС‚Р°РЅРѕРІР»РµРЅ SDK, С‚Рѕ СѓСЃС‚Р°РЅРѕРІРёС‚Рµ СЃ РѕС„РёС†РёР°Р»СЊРЅРѕРіРѕ СЃР°Р№С‚Р° https://dotnet.microsoft.com/ru-ru/download РїРѕСЃР»РµРґСЋСЋ РІРµСЂСЃРёСЋ
+2. Р Р°СЃРїР°РєСѓР№С‚Рµ Р°СЂС…РёРІ СЃ РїСЂРѕРµРєС‚РѕРј
+3. РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РїР°РєРµС‚С‹ NuGet: 
+ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
+ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL.Design
+5. РЈСЃС‚Р°РЅРѕРІРёС‚Рµ pgadmin Рё postgresql СЃРµСЂРІРµСЂ СЃ РѕС„РёС†РёР°Р»СЊРЅРѕРіРѕ СЃР°Р№С‚Р° https://www.enterprisedb.com/downloads/postgres-postgresql-downloads 
+6. РџСЂРѕРїРёС€РёС‚Рµ СѓРєР°Р·Р°РЅРЅС‹Рµ РїСЂРё СѓСЃС‚Р°РЅРѕРІРєРµ postgresql РґР°РЅРЅС‹Рµ РІ С„Р°Р№Р»Рµ РєРѕРЅС„РёРіСѓСЂР°С†РёРё appsettings.json, РІ СЃС‚СЂРѕРєРµ РїРѕРґРєР»СЋС‡РµРЅРёСЏ "DefaultConnection"
+7. РџСЂРѕРїРёС€РёС‚Рµ СЃР»РµРґСѓСЋС‰РёРµ РєРѕРјР°РЅРґС‹ РІ РєРѕРЅСЃРѕР»Рё РґР»СЏ СЃРѕР·РґР°РЅРёСЏ С‚Р°Р±Р»РёС†С‹ РІ Р‘Р” Рё СѓР±РµРґРёРґРµСЃСЊ РІ РЅР°Р»РёС‡РёРё СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РµР№ С‚Р°Р±Р»РёС†С‹: 
+ dotnet ef migrations add InitialCreate
+ dotnet ef database update
+8. Р—Р°РїСѓСЃС‚РёС‚Рµ РїСЂРѕРµРєС‚ СЃ РїРѕРјРѕС‰СЊСЋ dotnet run РЅР°С…РѕРґСЏСЃСЊ РІ РїР°РїРєРµ СЃ С„Р°Р№Р»РѕРј РїСЂРѕРµРєС‚Р°
+9. РџРµСЂРµР№С‚Рё РІ Р±СЂР°СѓР·РµСЂРµ РЅР° url https://localhost:7261 РёР»Рё http://localhost:5094
