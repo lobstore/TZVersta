@@ -5,11 +5,11 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Order Number</th>
-            <th>Sender City</th>
-            <th>Recipient City</th>
-            <th>Weight</th>
-            <th>Pickup Date</th>
+            <th>Номер заказа</th>
+            <th>Город отправителя</th>
+            <th>Город получателя</th>
+            <th>Вес груза</th>
+            <th>Дата забора груза</th>
             <th></th>
         </tr>
     </thead>
@@ -24,7 +24,7 @@
                 <td>@item.Weight</td>
                 <td>@item.PickupDate</td>
                 <td>
-                    <a asp-action="Details" asp-route-id="@item.Id">View</a>
+                    <a asp-action="Details" asp-route-id="@item.Id">Детали</a>
                 </td>
 
             </tr>
